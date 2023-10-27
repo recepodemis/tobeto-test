@@ -7,9 +7,10 @@ def findPrimeNumber(number):
             return number
         
 num = int(input("sayı giriniz: "))
-dizi = []
-for i in range(2,num):
+asalCarpan = []
+
+for i in range(2,num+1):
     if(num % i == 0):
         if(findPrimeNumber(i) != None):
-            dizi.append(i)
-print(dizi)
+            asalCarpan.append(i)
+print(f"Girilen sayının asal çarpanları: {asalCarpan}")
